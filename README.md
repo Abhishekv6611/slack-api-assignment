@@ -39,7 +39,7 @@ CHANNEL_ID=channel-id
   "text": "Hello from API!"
 }
 
- Schedule Message
+ **Schedule Message**
 ---> **POST /schedule**
 {
   "text": "Scheduled Message!",
@@ -47,19 +47,19 @@ CHANNEL_ID=channel-id
 }
 
  **Edit Message**
- ---> PUT /edit
+ ---> **PUT /edit**
  {
   "ts": "1719859812.000300",
   "newText": "Updated message text"
 }
 
  **Delete Message**
- ---> DELETE /delete
+ ---> **DELETE /delete**
  {
   "ts": "1719859812.000300"  (change it withyour msg ts)
 }
 
-Get Messages
+**Get Messages**
 **GET /messages**
 
 
