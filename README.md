@@ -27,45 +27,40 @@ Create a .env file
 SLACK_BOT_TOKEN=your-slack-bot-token
 CHANNEL_ID=channel-id
 
-^Start the server^
+## Start the server
 
 ----- node index.js  -----
 
 
-Available API Routes
+## Available API Routes
 
-
-
-
-
-
----> POST /send
+---> **POST /send**
 {
   "text": "Hello from API!"
 }
 
  Schedule Message
----> POST /schedule
+---> **POST /schedule**
 {
   "text": "Scheduled Message!",
   "postAt": 1719873600   // Unix timestamp (in future) change it withyour current + future time
 }
 
- Edit Message
+ **Edit Message**
  ---> PUT /edit
  {
   "ts": "1719859812.000300",
   "newText": "Updated message text"
 }
 
- Delete Message
+ **Delete Message**
  ---> DELETE /delete
  {
   "ts": "1719859812.000300"  (change it withyour msg ts)
 }
 
 Get Messages
-GET /messages
+**GET /messages**
 
 
 
