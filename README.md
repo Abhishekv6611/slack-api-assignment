@@ -34,6 +34,11 @@ CHANNEL_ID=channel-id
 
 Available API Routes
 
+
+
+
+
+
 ---> POST /send
 {
   "text": "Hello from API!"
@@ -61,6 +66,11 @@ Available API Routes
 
 Get Messages
 GET /messages
+
+
+
+
+
 
 
 Notes
