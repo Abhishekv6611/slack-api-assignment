@@ -31,3 +31,49 @@ CHANNEL_ID=channel-id
 
 ----- node index.js  -----
 
+
+Available API Routes
+
+---> POST /send
+{
+  "text": "Hello from API!"
+}
+
+ Schedule Message
+---> POST /schedule
+{
+  "text": "Scheduled Message!",
+  "postAt": 1719873600   // Unix timestamp (in future) change it withyour current + future time
+}
+
+ Edit Message
+ ---> PUT /edit
+ {
+  "ts": "1719859812.000300",
+  "newText": "Updated message text"
+}
+
+ Delete Message
+ ---> DELETE /delete
+ {
+  "ts": "1719859812.000300"  (change it withyour msg ts)
+}
+
+Get Messages
+GET /messages
+
+
+Notes
+All operations are performed in a Slack Developer Sandbox environment.
+
+Make sure your Slack app has the required scopes:
+
+      - chat:write
+      - channels:history
+      - chat:write.public
+
+
+Author
+
+Abhishek V
+https://www.linkedin.com/in/abhishek-v-4841a9242/
